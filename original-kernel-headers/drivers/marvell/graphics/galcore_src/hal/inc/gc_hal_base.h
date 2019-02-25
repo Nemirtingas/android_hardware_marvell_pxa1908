@@ -49,48 +49,7 @@ typedef struct _gcsFAST_FLUSH *         gcsFAST_FLUSH_PTR;
 
 struct _gcoSURF
 {
-#define gcoSURF_MAGIC ((gctUINT32)('S'|('U'<<8)|('R'<<16)|('F'<<24)))
-    union
-    {
-        gctINT32 totalSize[176];
-        struct
-        {
-            gctUINT32 _magic; // 'SURF'
-            gctINT8 gap4[64];
-            gctINT32 dword44;
-            gctINT32 dword48;
-            gctINT8 gap4C[92];
-            gctINT32 dwordA8;
-            gctINT8 gapAC[4];
-            gctINT32 dwordB0;
-            gctINT32 dwordB4;
-            gctINT32 dwordB8;
-            gctINT32 dwordBC;
-            gctINT8 byteC0;
-            gctINT8 byteC1;
-            gctINT8 byteC2;
-            gctINT8 byteC3;
-            gctINT32 dwordC4;
-            gctINT8 gapC8[88];
-            gctINT32 dword120;
-            gctINT8 gap124[68];
-            gctINT32 dword168;
-            gctINT8 gap16C[64];
-            gctINT32 dword1AC;
-            gctINT8 gap1B0[64];
-            gctINT32 dword1F0;
-            gctINT8 gap1F4[16];
-            gctINT32 dword204;
-            gctINT8 gap208[120];
-            gctINT32 dword280;
-            gctINT32 dword284;
-            gctINT32 dword288;
-            gctINT32 dword28C;
-            gctINT8 gap290[40];
-            gctINT32 dword2B8;
-            gctINT32 dword2BC;
-        };
-    };
+    gctINT32 totalSize[176];
 };
 
 typedef struct _gcoSURF *               gcoSURF;
